@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @inquiry.name %>
+</p>
+
+<p>
+  <b>Contact:</b>
+  <%= @inquiry.contact %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @inquiry.email %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @inquiry.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_inquiry_path(@inquiry) %> |
+<%= link_to 'Back', inquiries_path %>
