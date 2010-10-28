@@ -1,0 +1,4 @@
+<p><%= @inquiry.name %></p>
+Thank you for inquiry!
+
+<p><%= link_to "Edit profile", edit_user_url(@user) %></p>

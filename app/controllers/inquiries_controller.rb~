@@ -44,7 +44,6 @@ class InquiriesController < ApplicationController
 
     respond_to do |format|
       if @inquiry.save
-      	InquiryMailer.inquiry_confirmation(@inquiry).deliver
         format.html { redirect_to(@inquiry, :notice => 'Inquiry was successfully created.') }
         format.xml  { render :xml => @inquiry, :status => :created, :location => @inquiry }
       else
